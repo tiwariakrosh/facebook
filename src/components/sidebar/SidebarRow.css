@@ -1,0 +1,17 @@
+.SidebarRow {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    margin: 15px 0;
+    padding: 4px 20px;
+}
+
+.SidebarRow:hover {
+    background-color: var(--smoke);
+}
+
+.SidebarRow .MuiSvgIcon-root {
+    font-size: 2rem;
+    color: var(--blue);
+}
