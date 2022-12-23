@@ -6,7 +6,7 @@
     --secondary: #555;
 }
 
-.pageTop {
+.app_body {
     display: flex;
     gap: 40px;
     width: 100%;

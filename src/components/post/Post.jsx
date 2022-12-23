@@ -1,4 +1,4 @@
-import { ChatBubbleOutline, Reply, ThumbUp } from '@mui/icons-material'
+import { ChatBubbleOutline, Reply, ThumbUp, ThumbUpOffAlt } from '@mui/icons-material'
 import { Avatar } from '@mui/material'
 import React from 'react'
 import "./Post.css"
@@ -34,7 +34,7 @@ function Post({ profilePic, image, userName, timestamp, message }) {
                 <hr />
                 <div className="postOption_bottom">
                     <div className="post_option">
-                        <ThumbUp />
+                        <ThumbUpOffAlt />
                         <p>Like</p>
                     </div>
                     <div className="post_option">
