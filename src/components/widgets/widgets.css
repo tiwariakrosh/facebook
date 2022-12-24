@@ -12,14 +12,15 @@
 .widget_bottom {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     margin-top: 10px;
+    gap: 5px;
 }
 
 .widgetBottom_top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0;
 }
 
 .Widget_icon {
@@ -33,9 +34,15 @@
 
 .contact_item {
     display: flex;
-    gap: 10px;
-    margin-top: 5px;
     align-items: center;
+    padding: 6px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.contact_item:hover {
+    background-color: rgb(217, 225, 224);
 }
 
 .contact_item .MuiAvatar-root {
@@ -47,6 +54,7 @@
 
 .contact_item .MuiAvatar-root img {
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .contact_item .MuiAvatar-root::after {
