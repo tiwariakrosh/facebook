@@ -4,7 +4,7 @@ import "./Feed.css"
 import MessageSender from './MessageSender'
 import StoryReel from './StoryReel'
 import db from "../../firebase";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, orderBy } from "firebase/firestore";
 
 
 function Feed() {
@@ -12,8 +12,8 @@ function Feed() {
 
     useEffect(() => {
         const colRef = collection(db, 'posts')
-        // .orderBy('timestamp', 'desc')
-        getDocs(colRef)
+        const database = query(colRef, orderBy("timestamp", "desc"))
+        getDocs(database)
             .then((snapshot) =>
                 setPosts(snapshot.docs.map((doc) => ({
                     id: doc.id,

@@ -1,9 +1,10 @@
 import { ChatBubbleOutline, Reply, ThumbUp, ThumbUpOffAlt } from '@mui/icons-material'
 import { Avatar } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import "./Post.css"
 
 function Post({ profilePic, image, userName, timestamp, message }) {
+    const [count, setCount] = useState(0)
     return (
         <div className='post'>
             <div className="post_top">
@@ -24,7 +25,7 @@ function Post({ profilePic, image, userName, timestamp, message }) {
                 <div className="postOption_top">
                     <div className="like_count">
                         <ThumbUp />
-                        <p>22</p>
+                        <p>{count}</p>
                     </div>
                     <div className="comment_count">
                         <p>3</p>
@@ -34,7 +35,9 @@ function Post({ profilePic, image, userName, timestamp, message }) {
                 <hr />
                 <div className="postOption_bottom">
                     <div className="post_option">
-                        <ThumbUpOffAlt />
+                        <ThumbUpOffAlt
+                            onClick={() => setCount(count + 1)}
+                        />
                         <p>Like</p>
                     </div>
                     <div className="post_option">
