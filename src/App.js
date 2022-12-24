@@ -5,7 +5,7 @@ import Sidebar from './components/sidebar/Sidebar';
 import Feed from './components/feed/Feed';
 import Widgets from './components/widgets/Widgets'
 import Login from './components/Login';
-import { useStateValue } from './StatePrivider';
+import { useStateValue } from './StateProvider';
 
 
 function App() {

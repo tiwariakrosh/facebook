@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./login.css"
 import { auth } from '../firebase';
-import { useStateValue } from "../StatePrivider"
+import { useStateValue } from "../StateProvider"
 import { actionTypes } from "../reducer"
 import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 

@@ -11,8 +11,10 @@ import AddIcon from '@mui/icons-material/Add';
 import ForumIcon from '@mui/icons-material/Forum';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { useStateValue } from '../StateProvider';
 
-function Header() {
+function Header({ }) {
+    const [{ user }, dispatch] = useStateValue();
     return (
         <div className='Header'>
             <div className="header_left">
@@ -41,8 +43,8 @@ function Header() {
             </div>
             <div className="header_right">
                 <div className="header_info">
-                    <Avatar />
-                    <h5>Akrosh Tiwari</h5>
+                    <Avatar src={user.photoURL} alt={user.displayName} />
+                    <h5>{user.displayName}</h5>
                 </div>
                 <IconButton>
                     <AddIcon />
