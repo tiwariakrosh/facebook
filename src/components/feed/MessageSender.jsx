@@ -9,8 +9,6 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
-
-
 function MessageSender() {
     const [{ user }, dispatch] = useStateValue();
     const [input, setInput] = useState('');

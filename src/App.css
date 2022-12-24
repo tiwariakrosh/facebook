@@ -8,6 +8,18 @@
 
 .app_body {
     display: flex;
-    gap: 40px;
+    gap: 10%;
     width: 100%;
+}
+
+.app_body .sidebar {
+    width: 20%;
+}
+
+.app_body .Feed {
+    width: 46%;
+}
+
+.app_body .widgets {
+    width: 20%;
 }

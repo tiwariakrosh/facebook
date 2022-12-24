@@ -1,0 +1,67 @@
+.widget_top {
+    margin: 16px 0;
+}
+
+.widgetTop_contain {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.widget_bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.widgetBottom_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Widget_icon {
+    display: flex;
+    gap: 15px;
+}
+
+.Widget_icon svg {
+    color: var(--secondary);
+}
+
+.contact_item {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.contact_item .MuiAvatar-root {
+    width: 33px;
+    height: 33px;
+    position: relative;
+    border: 2px solid var(--blue);
+}
+
+.contact_item .MuiAvatar-root img {
+    object-fit: cover;
+}
+
+.contact_item .MuiAvatar-root::after {
+    position: absolute;
+    content: '';
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: rgb(35, 172, 35);
+    right: 3px;
+    bottom: 3px;
+}
+
+.contact_item h5 {
+    color: #202020;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
